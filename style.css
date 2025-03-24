@@ -504,13 +504,10 @@ body, html {
   font-family: Garamond, 'Times New Roman', serif;
 }
 
-.konsument-section {
+
+
+.konsumenttvist-section {
+
   background: linear-gradient(rgba(123, 44, 45, 0.65), rgba(123, 44, 45, 0.65)),
-              url('/assets/konsument.jpg') center/cover no-repeat;
-  height: 60vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #7b2c2d;
-  font-family: Garamond, 'Times New Roman', serif;
+  url('/assets/konsument.jpg') center/cover no-repeat;
 }
