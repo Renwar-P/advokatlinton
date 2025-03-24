@@ -72,6 +72,7 @@ body, html {
 .title-text h1,
 .title-text h2 {
   font-family: Garamond, 'Times New Roman', serif !important;
+ 
 }
 
 /* Rättsområden */
@@ -80,6 +81,12 @@ body, html {
   background-position: center;
   position: relative;
   min-height: 100vh;
+}
+
+.rattsomraden-link {
+  color: #fde4d2;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2.5vw, 1.7rem);
 }
 
 .rattsomraden-section::before {
@@ -279,4 +286,116 @@ body, html {
 #call-button {
 
    color: #7b2c2d !important ;
+}
+
+
+
+/* brottmal */
+
+.resurser-vag-link {
+  color: #fde4d2;
+  text-decoration: none;
+  font-size: clamp(1.5rem, 2.5vw, 1.7rem);
+}
+
+
+.brottmal-link {
+  color: #fde4d2; /* Valfritt: ljusare färg vid hover */
+ 
+}
+.brottmal-link:hover {
+  color: #ffffff; /* Valfritt: ljusare färg vid hover */
+  
+}
+
+
+.brottmal-section {
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(123, 44, 45, 0.65), rgba(123, 44, 45, 0.65)),
+  url('/assets/brottmal.jpg') center/cover no-repeat;
+}
+
+
+.brottmal-text {
+  
+  background: linear-gradient(rgba(123, 44, 45, 0.65), rgba(123, 44, 45, 0.65)),
+              url('/assets/brottmal.jpg') center/cover no-repeat;
+
+              
+} 
+
+
+
+.brottmal-title {
+  background-color: #fde4d2;
+  color: #7b2c2d;
+  font-family: 'Forum', Garamond, serif;
+  font-size: clamp(1.3rem, 2.5vw, 8rem);
+}
+
+.brottmal-title h2 {
+  
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+/* Text overlay spacing */
+.overlay-text {
+  font-family: Garamond, 'Times New Roman', serif;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #fde4d2;
+}
+
+/* Responsiv padding */
+@media (max-width: 768px) {
+  .brottmal-section {
+    flex-direction: column;
+  }
+}
+
+
+
+/* skydda barn */
+#skydda-barn-title {
+
+  font-size: clamp(1.3rem, 2.5vw, 8rem);
+}
+
+
+
+
+
+
+/* lvu */ 
+
+.lvu-hero-section {
+  background: linear-gradient(rgba(123, 44, 45, 0.65), rgba(123, 44, 45, 0.65)),
+              url('/assets/lvu.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lvu-hero-section h1,
+.lvu-hero-section h2 {
+  font-family: Garamond, 'Times New Roman', serif;
+  color: #fde4d2;
+}
+
+.lvu-info-section {
+  background-color: #fde4d2;
+  color: #7b2c2d;
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
+.lvu-info-section h5 {
+  font-weight: bold;
+}
+
+.lvu-info-section ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
 }
