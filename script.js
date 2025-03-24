@@ -15,3 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const navbar = document.getElementById('navbar');
+
+  function updateNavbar() {
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  }
+
+  updateNavbar();
+  window.addEventListener('scroll', updateNavbar);
+});

@@ -69,23 +69,17 @@ body, html {
   font-family: Garamond, 'Times New Roman', serif;
 }
 
-
 .title-text h1,
 .title-text h2 {
   font-family: Garamond, 'Times New Roman', serif !important;
 }
 
-
-
-
 /* Rättsområden */
-
 .rattsomraden-section {
   background-size: cover;
   background-position: center;
   position: relative;
   min-height: 100vh;
-  
 }
 
 .rattsomraden-section::before {
@@ -114,4 +108,175 @@ body, html {
 
 .rattsomrade-box {
   max-width: 400px;
+}
+
+/* Resurser */
+.resurser-section {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.resurser-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(253, 228, 210, 0.7);
+  z-index: 1;
+}
+
+.resurser-section .container-fluid,
+.resurser-section .row {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.resurser-left h2 {
+  font-family: Garamond, 'Times New Roman', serif;
+  color: #7b2c2d;
+}
+
+.resurser-link {
+  font-family: 'Dancing Script', cursive;
+
+  font-style: italic;
+  font-size: 2.5rem;
+  color: #7b2c2d;
+  text-decoration: none;
+}
+
+.resurser-link:hover {
+  text-decoration: underline;
+}
+
+.resurs-box {
+  background-color: #7b2c2d;
+  color: #fde4d2;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+  max-width: 800px;
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
+.resurs-box h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 991.98px) {
+  .resurser-left {
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .resurser-left h2 {
+    text-align: center;
+  }
+
+  .resurser-link {
+    display: block;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+/* Medarbetare */
+.medarbetare-section {
+  background-image: url('assets/medarbetare.jpg');
+  width: 100%;
+  max-height: 1000px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(123, 44, 45, 0.9);
+  background-blend-mode: multiply;
+}
+
+.medarbetare-section h2 {
+  font-family: Garamond, 'Times New Roman', serif;
+  color: #fde4d2;
+}
+
+.medarbetare-section .card {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fde4d2;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
+.medarbetare-section .card:hover {
+  transform: scale(1.02);
+}
+
+.medarbetare-section .card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.medarbetare-section .card h5,
+.medarbetare-section .card p,
+.medarbetare-section .card a {
+  font-family: Garamond, 'Times New Roman', serif;
+  color: #7b2c2d;
+  text-align: center;
+}
+
+.medarbetare-section .card a:hover {
+  text-decoration: underline;
+}
+
+
+.kontakt-section, a:focus img {
+  outline: none;
+  color: #fde4d2;
+}
+
+.kontakt-section a {
+  color: #fde4d2 !important;
+  text-decoration: underline;
+}
+
+.kontakt-section a:hover {
+  color: #ffffff !important;
+}
+
+
+
+/*navbar*/
+
+
+
+.navbar {
+  transition: background-color 0.3s ease;
+  background-color: transparent !important;
+}
+
+.navbar-scrolled {
+  background-color: rgba(123, 44, 45, 0.85) !important;
+}
+
+.nav-link {
+
+  color: #fde4d2 !important;
+  font-family: Fraunces;
+}
+
+
+.form-control {
+
+  background-color: #fde4d2 !important;
+  font-family: Garamond, 'Times New Roman', serif;
+}
+
+#call-button {
+
+   color: #7b2c2d !important ;
 }

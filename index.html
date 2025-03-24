@@ -7,40 +7,74 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  <!-- Hero Sektion -->
-  <section class="hero position-relative overflow-hidden">
-    <video autoplay muted loop playsinline class="w-100" style="object-fit: cover; height: 100vh;">
-      <source src="assets/hero.mp4" type="video/mp4">
-      Din webbläsare stödjer inte video.
-    </video>
-    <div class="position-absolute top-50 start-50 translate-middle text-center text-light z-1" >
-      <div class="title-text">
-        <h1 class="display-4 fw-bold" >ADVOKATBYRÅN</h1>
-        <h2 class="display-5">LINTON KENNEGÅRD</h2>
-      </div>
+<!-- Sticky Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#hero">
+      <img src="assets/logo.png" alt="Logo" width="40" height="40" class="me-2" >
      
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#hero">Hem</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#omoss">Om oss</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rattsomraden">Rättsområden</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#medarbetare">Medarbetare</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+        </li>
+      </ul>
     </div>
-  </section>
+  </div>
+</nav>
+
+<!-- Hero Sektion -->
+<section class="hero position-relative overflow-hidden" id="hero">
+  <video autoplay muted loop playsinline class="w-100" style="object-fit: cover; height: 100vh;">
+    <source src="assets/hero.mp4" type="video/mp4">
+    Din webbläsare stödjer inte video.
+  </video>
+ 
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-light z-1">
+    <div class="title-text" style="font-family: Fraunces; color: #fde4d2;">
+      <h2 class="fw-bold" style="font-size: clamp(2rem, 3vw, 5rem);">ADVOKATBYRÅN</h2>
+      <h1 class="fw-bold" style="font-size: clamp(2.5rem, 3vw, 7rem);">LINTON KENNEGÅRD</h1>
+  </div>
+</section>
 
   <!-- Om oss sektion -->
-  <section class="bg-dark-red text-light om-oss">
+  <section class="bg-dark-red text-light om-oss animate-left" id="omoss">
     <div class="container h-100">
       <div class="row align-items-center h-100 flex-column flex-lg-row">
         <div class="col-lg-6 text-center mb-4 mb-lg-0 d-flex flex-column justify-content-center align-items-center" style="color: #fde4d2;">
           <img src="assets/logo.png" alt="Logotyp" class="mb-3 logo-img">
-          <h2 class="fw-normal">ADVOKATBYRÅN<br>LINTON KENNEGÅRD</h2>
-          <h3 class="fw-light mt-2">EXPERTIS INOM<br>FAMILJERÄTT, BROTTMÅL & SOCIALRÄTT</h3>
-          <p class="mt-3 px-2 px-md-5">
+          <h2 class="fw-normal" style="font-family: Fraunces;">ADVOKATBYRÅN<br>LINTON KENNEGÅRD</h2>
+          <h3 class="fw-light mt-2" style="font-family: 'Playfair Display', serif;
+">EXPERTIS INOM<br>FAMILJERÄTT, BROTTMÅL & SOCIALRÄTT</h3>
+          <p class="mt-3 px-2 px-md-5" style="font-family: Garamond, 'Times New Roman', serif;">
             Advokatbyrån Linton Kennegård AB är specialiserad inom familjerätt,
             med särskilt fokus på skilsmässor och vårdnadsfrågor. Vi har gedigen
             erfarenhet av brottmål som rör brott inom familjen. Advokat Linton
             Kennegård arbetar även brett inom brottmål och har erfarenhet både
             som försvarare och målsägandebiträde i mål som rör grova brott.
           </p>
-          <a href="tel:08968860" class="btn btn-light text-dark fw-bold btn-sm mt-2">RING OSS</a>
+          <a href="tel:08968860" class="btn btn-light text-dark fw-bold btn-lg mt-2" style="background-color: #fde4d2; font-family: Garamond, 'Times New Roman', serif;">RING OSS</a>
         </div>
         <div class="col-lg-6 d-flex justify-content-center align-items-center">
           <div class="p-4 border border-light rounded bg-light-red">
@@ -55,7 +89,7 @@
 
 
 <!-- Våra Rättsområden Sektion med jämnhöjd -->
-<section class="rattsomraden-section text-light text-center d-flex align-items-center" style="background-image: url('assets/rattsområden-img.png');  " >
+<section class="rattsomraden-section text-light text-center d-flex align-items-center animate-left" id="rattsomraden" style="background-image: url('assets/rattsområden-img.png');  " >
   <div class="container py-5">
     <h2 class="mb-5 section-title">VÅRA RÄTTSOMRÅDEN</h2>
     <div class="row">
@@ -82,6 +116,157 @@
           <p>Vi har lång erfarenhet av brottmål och företräder både misstänkta och brottsoffer genom hela rättsprocessen.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Resurser och Vägledning Sektion -->
+<section class="resurser-section d-flex align-items-center text-light animate-left" id="resurser" style="background-image: url('assets/resurser.png');">
+  <div class="container-fluid px-lg-5">
+    <div class="row h-100">
+      
+      <!-- Vänster: Titel -->
+      <div class="col-lg-4 d-flex flex-column justify-content-start justify-content-lg-between align-items-start p-5 text-start resurser-left">
+        <div>
+          <h2 class="display-6">RESURSER<br>OCH<br>VÄGLEDNING</h2>
+        </div>
+        <!-- Läs mer-länk -->
+        <div class="mt-auto d-none d-lg-block">
+          <a href="#" class="resurser-link">Läs mer</a>
+        </div>
+      </div>
+
+      <!-- Höger: Cirklar med innehåll -->
+      <div class="col-lg-8 d-flex flex-column justify-content-center align-items-center gap-4 p-5">
+        <div class="resurs-box text-center">
+          <h4 class="fw-bold">VANLIGA SKÄL FÖR ENSAM VÅRDNAD</h4>
+          <p>Att ansöka om ensam vårdnad är en av de mest utmanande och känslomässigt laddade beslut en förälder kan fatta. Det...</p>
+        </div>
+        <div class="resurs-box text-center">
+          <h4 class="fw-bold">ATT SKYDDA DITT BARN I EN VÅRDNADSTVIST</h4>
+          <p>Att överväga en vårdnadstvist när det finns en våldsutövande förälder inblandad kan vara en oerhört stressande upplevelse. Många föräldrar känner...</p>
+        </div>
+        <div class="resurs-box text-center">
+          <h4 class="fw-bold">FEM MYTER OM ENSAM VÅRDNAD</h4>
+          <p>Myt 1: Man blir av med vårdnaden om man vägrar en våldsutövande förälder umgänge. Att skydda ett barn från en...</p>
+        </div>
+        <div class="resurs-box text-center">
+          <h4 class="fw-bold">VAD SKA JAG GÖRA NÄR MITT BARN INTE VILL TRÄFFA MIG?</h4>
+          <p>Att stå inför en situation där ditt barn säger att det inte vill träffa dig kan vara både hjärtskärande och...</p>
+        </div>
+        <!-- Läs mer-länk för mobil -->
+        <div class="d-block d-lg-none mt-4">
+          <a href="#" class="resurser-link">Läs mer</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="medarbetare-section text-light py-5 animate-left" id="medarbetare" style="background: linear-gradient(rgba(123, 44, 45, 0.7), rgba(123, 44, 45, 0.7)), url('assets/medarbetare.jpg') center/cover no-repeat;"
+>
+  <div class="container">
+    <h2 class="text-center mb-5">MEDARBETARE</h2>
+    <div class="row justify-content-center gy-4">
+
+      <!-- Medarbetare 1 -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="card p-4">
+          <img src="assets/yasmin.png" alt="Yasmin Sazvar von Nottbeck" class="mx-auto mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover;">
+          <h5 class="fw-bold mb-1">YASMIN SAZVAR VON NOTTBECK</h5>
+          <p class="mb-1">Biträdande jurist</p>
+          <p class="mb-1"><a href="mailto:yasmin@advokatlinton.se">yasmin@advokatlinton.se</a></p>
+          <p>Svenska/Engelska/Spanska/Persiska</p>
+        </div>
+      </div>
+
+      <!-- Medarbetare 2 -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <div class="card p-4">
+          <img src="assets/linton-bild-2.jpg" alt="Linton Kennegård" class="mx-auto mb-3 rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: center top;">
+          <h5 class="fw-bold mb-1">LINTON KENNEGÅRD</h5>
+          <p class="mb-1">Advokat/Innehavare</p>
+          <p class="mb-1"><a href="mailto:linton@advokatlinton.se">linton@advokatlinton.se</a></p>
+          <p>Svenska/Engelska</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Kontakta oss Sektion -->
+<!-- Kontakta oss Sektion -->
+<section class="kontakt-section py-5 animate-left" id="kontakt" style="background-color: #7b2c2d; font-family: Garamond, 'Times New Roman', serif;">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Vänster: Formulär -->
+      <div class="col-lg-6 d-flex flex-column align-items-center">
+        <h3 class="mb-4 text-center">KONTAKTA OSS</h3>
+        <form action="https://formsubmit.co/info@advokatlinton.se" method="POST" style="width: 100%; max-width: 500px;">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="box">
+
+          <div class="row mb-3">
+            <div class="col">
+              <input type="text" class="form-control" name="förnamn" placeholder="Förnamn" required>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" name="efternamn" placeholder="Efternamn" required>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col">
+              <input type="email" class="form-control" name="email" placeholder="E-post" required>
+            </div>
+            <div class="col">
+              <input type="tel" class="form-control" name="telefon" placeholder="Telefonnummer">
+            </div>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" name="meddelande" rows="5" placeholder="Meddelande" required></textarea>
+          </div>
+          <div class="text-center mb-4">
+            <button type="submit" class="btn btn-light text-dark fw-bold px-5 py-3" style="background-color: #fde4d2; font-family: Garamond, 'Times New Roman', serif;">SKICKA</button>
+          </div>
+        </form>
+        <div class="text-center">
+          <h2 class="text-light mb-2" style="color: #fde4d2 !important; font-family: 'Dancing Script', cursive;
+">Vill du hellre prata med oss direkt?</h2>
+          <a href="tel:08968860" class="btn btn-outline-light px-4 py-2" id="call-button" style="background-color: #fde4d2;">RING OSS</a>
+        </div>
+      </div>
+
+      <!-- Höger: Karta och kontaktinfo -->
+      <div class="col-lg-6">
+        <div class="mb-4">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2058.441694587479!2d18.058364316159136!3d59.3364028816634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5a60b4b28b%3A0x5f98e1451946e6ae!2sDrottninggatan%2097%2C%20113%2060%20Stockholm!5e0!3m2!1ssv!2sse!4v1700000000000" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div style="color: #fde4d2;">
+          <p class="mb-1">Drottninggatan 97<br>113 60 Stockholm</p>
+          <p class="mb-1"><a href="mailto:info@advokatlinton.se" class="text-decoration-underline">info@advokatlinton.se</a></p>
+          <p class="mb-1"><a href="tel:08968860" class="text-decoration-underline">08 – 96 88 60</a></p>
+          <p class="mb-1"><a href="https://advokatlinton.se" class="text-decoration-underline">advokatlinton.se</a></p>
+          <p class="mb-1"><a href="#" class="text-decoration-underline">GDPR</a></p>
+          <p class="mb-3"><a href="#" class="text-decoration-underline">Konsumenttvistnämnden</a></p>
+          <p>Kontoret är rullstolsanpassat</p>
+          <div class="mt-3">
+            <a href="https://www.facebook.com/advokatlinton" target="_blank" class="me-3" style="outline: none;">
+              <img src="assets/facebook-icon.png" alt="Facebook" style="width: 30px; height: 30px; filter: invert(1);">
+            </a>
+            <a href="https://www.instagram.com/advokatlinton/?hl=en%27" target="_blank">
+              <img src="assets/instagram-icon.png" alt="Instagram" style="width: 30px; height: 30px; filter: invert(1);">
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
