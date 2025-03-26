@@ -5,13 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Law Firm Linton Kennegård</title>
   <link rel="icon" href="/assets/favicon.jpg" type="image/jpg">
-
   <link rel="stylesheet" href="/style.css">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
@@ -52,33 +49,35 @@
   </div>
 </nav>
 
-<!-- GDPR Section -->
-<section class="gdpr-section d-flex align-items-center justify-content-center text-center text-light">
-  <div class="container animate-left">
-    <h1 class="display-4" style="color: #fde4d2;">GDPR</h1>
-  </div>
-</section>
-
-<section class="lvu-info-section py-5 animate-left">
+<section class="vadbarn-section py-5 animate-left" style="background: linear-gradient(rgba(253, 228, 210, 0.85), rgba(253, 228, 210, 0.85)), url('/assets/vad-att.jpg') center/cover no-repeat; font-family: Garamond, serif; color: #7b2c2d !important;">
   <div class="container">
+    <h2 class="text-center mb-5" style="font-family: 'Forum', Garamond, serif; font-size: clamp(2rem, 5vw, 3.5rem); color: #7b2c2d;">WHAT SHOULD I DO WHEN MY CHILD DOESN'T WANT TO SEE ME?</h2>
     <div class="row g-4">
-      <div class="col-12">
-        <p>
-          Law Firm Linton Kennegård AB's privacy policy according to GDPR/Data Protection Regulation
-          <br><br>
-          At Law Firm Linton Kennegård AB (the firm), personal data such as names, addresses, email addresses, personal identification numbers/designation numbers and similar client information is processed in accordance with the Data Protection Regulation (2016/679/EU) to conduct mandatory conflict checks and to handle, execute and administer received assignments/cases and thereby safeguard our clients' interests. Personal data may appear in court and authority documents but is also collected for accounting and billing purposes. (Data may be disclosed/communicated to authorities and courts to safeguard client interests)
-          <br><br>
-          The personal data is stored in accordance with the obligation incumbent upon Law Firm Linton Kennegård AB under the guiding rules for good legal practice, for a period of ten years from the date of completion of the case, or for the longer period required by the nature of the case.
-          <br><br>
-          The processing of personal data is based on the fact that the processing is necessary to fulfill an agreement between the client and Law Firm Linton Kennegård AB (Article 6 b GDPR), that the processing is necessary to fulfill a legal obligation incumbent upon Law Firm Linton Kennegård AB (Article 6 c GDPR) or that the processing is necessary to perform tasks of public interest (Article 6 e GDPR).
-          <br><br>
-          You have the right to request information from the law firm free of charge about the use of personal data concerning you. At your request or on our own initiative, we will correct or delete incorrect data or restrict the processing of such data. You also have the right to request that your data not be processed for direct marketing purposes. You also have the right to receive your personal data in a machine-readable format (or, if technically possible, to have the data transferred to a third party you designate). If you are dissatisfied with our processing, you can submit a complaint to a supervisory authority, which in Sweden is the Data Protection Authority (www.datainspektionen.se). You can also contact the supervisory authority in the country where you live or work.
-          <br><br>
-          Contact us at <a href="mailto:info@advokatlinton.se">info@advokatlinton.se</a> or the address below if you have any questions regarding our processing of personal data.
-          <br><br>
-          <strong>Data controller:</strong> Law Firm Linton Kennegård AB, 559441-6215, Drottninggatan 97, 113 60, Stockholm, 072-2932606
-        </p>
+
+      <!-- Column 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Explore the reasons behind your child's feelings</h5>
+        <p>The first step is to try to understand why your child feels the way they do. Sometimes a child's reluctance to see a parent can be a direct reaction to conflicts or negative experiences. It's important to approach this situation with empathy and be open to listening without judgment.</p>
       </div>
+
+      <!-- Column 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Create a supportive environment</h5>
+        <p>To handle and potentially resolve this sensitive situation, it's crucial to create a calm and supportive environment for your child. This means encouraging open communication and showing that you respect and take their feelings seriously. Sometimes family counseling or therapy can be an effective tool to help the child process their emotions and foster a better relationship between parents and child.</p>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Legal help when needed</h5>
+        <p>In some cases, these conflicts cannot be resolved through conversation alone and require deeper legal examination, especially if there are indications that the child's well-being is at risk. This is where an experienced family law attorney can be crucial. An attorney can help navigate the legal aspects of custody agreements and ensure all measures align with the child's best interests. If you suspect the other parent is influencing the child, it's also recommended to consult legal counsel to explore options for stopping this negative influence.</p>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <h5 class="fw-bold mb-3">Summary</h5>
+        <p>If you're facing a situation where your child doesn't want to see you, it's important to approach the problem with understanding, patience, and legal caution. Having a committed and experienced attorney by your side can make a crucial difference in how you handle this sensitive situation and work toward a solution that best serves your child. An attorney will not only provide necessary legal advice but also support you through the process, ensuring your and your child's rights are protected.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -96,10 +95,10 @@
 
           <div class="row mb-3">
             <div class="col">
-              <input type="text" class="form-control" name="firstname" placeholder="First Name" required>
+              <input type="text" class="form-control" name="förnamn" placeholder="First Name" required>
             </div>
             <div class="col">
-              <input type="text" class="form-control" name="lastname" placeholder="Last Name" required>
+              <input type="text" class="form-control" name="efternamn" placeholder="Last Name" required>
             </div>
           </div>
           <div class="row mb-3">
@@ -107,11 +106,11 @@
               <input type="email" class="form-control" name="email" placeholder="Email" required>
             </div>
             <div class="col">
-              <input type="tel" class="form-control" name="phone" placeholder="Phone Number">
+              <input type="tel" class="form-control" name="telefon" placeholder="Phone Number">
             </div>
           </div>
           <div class="mb-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            <textarea class="form-control" name="meddelande" rows="5" placeholder="Message" required></textarea>
           </div>
           <div class="text-center mb-4">
             <button type="submit" class="btn btn-light text-dark fw-bold px-5 py-3" style="background-color: #fde4d2; font-family: Garamond, 'Times New Roman', serif;">SEND</button>
@@ -123,7 +122,7 @@
         </div>
       </div>
 
-      <!-- Right: Map and contact info -->
+      <!-- Right: Map and Contact Info -->
       <div class="col-lg-6">
         <div class="mb-4">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2058.441694587479!2d18.058364316159136!3d59.3364028816634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d5a60b4b28b%3A0x5f98e1451946e6ae!2sDrottninggatan%2097%2C%20113%2060%20Stockholm!5e0!3m2!1ssv!2sse!4v1700000000000" width="100%" height="250" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -150,6 +149,6 @@
   </div>
 </section>
 
-  <script src="../script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>

@@ -448,10 +448,37 @@ body, html {
 
 
 /* 5 myter */
+/* Sätt fasta höjder och likformig layout */
+
 .fem-myter-text p {
   color: #fde4d2;
   font-family: Garamond, 'Times New Roman', serif;
   font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+}
+
+/* Sätt fasta höjder och likformig layout */
+.myt-text {
+  color: #fde4d2;
+  font-family: Garamond, 'Times New Roman', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.3rem);
+  min-height: 80px;
+  max-height: 80px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.3;
+}
+
+
+.myt-box {
+  color: #fde4d2;
+  font-family: Garamond, 'Times New Roman', serif;
+  height: 220px; /* justera efter behov */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
